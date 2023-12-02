@@ -3,7 +3,6 @@ package de.linkel.aoc
 import de.linkel.aoc.base.AbstractLinesAdventDay
 import de.linkel.aoc.base.QuizPart
 import jakarta.inject.Singleton
-import java.lang.Exception
 
 @Singleton
 class Day03: AbstractLinesAdventDay<Int>() {
@@ -45,13 +44,6 @@ class Day03: AbstractLinesAdventDay<Int>() {
             }
             val filterChar = criteria(bits)
             return filter(input.filter { it.toCharArray()[idx] == filterChar }, idx + 1, criteria)
-        }
-    }
-
-    fun binaryToInt(input: String): Int {
-        return input.toCharArray().foldIndexed(0) { idx, sum, c ->
-            if (c == '0') sum
-            else sum + (1 shl idx)
         }
     }
 

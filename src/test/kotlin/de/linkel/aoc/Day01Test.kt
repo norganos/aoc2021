@@ -1,9 +1,5 @@
 package de.linkel.aoc
 
-import de.linkel.aoc.base.QuizPart
-import org.assertj.core.api.Assertions
-import org.junit.jupiter.api.Test
-
 class Day01Test: AbstractDayTest<Int>() {
     override val exampleA = """
 199

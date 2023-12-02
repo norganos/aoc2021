@@ -7,7 +7,6 @@ import de.linkel.aoc.utils.grid.Vector
 import de.linkel.aoc.utils.space.discrete.Point3d
 import de.linkel.aoc.utils.space.discrete.Vector3d
 import jakarta.inject.Singleton
-import java.lang.Exception
 
 @Singleton
 class Day02: AbstractLinesAdventDay<Int>() {
