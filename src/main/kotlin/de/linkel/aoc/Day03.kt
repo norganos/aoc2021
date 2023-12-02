@@ -8,7 +8,6 @@ import java.lang.Exception
 @Singleton
 class Day03: AbstractLinesAdventDay<Int>() {
     override val day = 3
-    override val parts = QuizPart.BOTH
 
     override fun process(part: QuizPart, lines: Sequence<String>): Int {
         return if (part == QuizPart.A) processA(lines)

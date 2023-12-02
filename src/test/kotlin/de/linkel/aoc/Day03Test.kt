@@ -4,8 +4,8 @@ import de.linkel.aoc.base.QuizPart
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
-class Day03Test {
-    val example = """
+class Day03Test: AbstractDayTest<Int>() {
+    override val exampleA = """
 00100
 11110
 10110
@@ -19,24 +19,11 @@ class Day03Test {
 00010
 01010
         """.trimIndent()
+    override val exampleSolutionA = 198
+    override val solutionA = 4160394
 
-    @Test
-    fun `example part 1`() {
-        Assertions.assertThat(Day03().test(QuizPart.A, example)).isEqualTo(198)
-    }
+    override val exampleSolutionB = 230
+    override val solutionB = 4125600
 
-    @Test
-    fun `example part 2`() {
-        Assertions.assertThat(Day03().test(QuizPart.B, example)).isEqualTo(230)
-    }
-
-    @Test
-    fun `solution part 1`() {
-        Assertions.assertThat(Day03().solve(QuizPart.A)).isEqualTo(4160394)
-    }
-
-    @Test
-    fun `solution part 2`() {
-        Assertions.assertThat(Day03().solve(QuizPart.B)).isEqualTo(4125600)
-    }
+    override val implementation = Day03()
 }
